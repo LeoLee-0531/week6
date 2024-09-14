@@ -1,0 +1,11 @@
+$primary: #6E6B67;
+// variable overwrite
+// $my-primary: (
+  //   "my-primary": #6E6B67,
+  //   // "200": #FFFBE5,
+  //   // "300": #E8E3DA,
+  //   // "400": #6E6B67
+  // );
+  
+  // $theme-colors: map-merge($theme-colors, $my-primary);
+@import "../node_modules/bootstrap/scss/bootstrap";
