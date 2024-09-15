@@ -1,11 +1,115 @@
-$primary: #6E6B67;
-// variable overwrite
-// $my-primary: (
-  //   "my-primary": #6E6B67,
-  //   // "200": #FFFBE5,
-  //   // "300": #E8E3DA,
-  //   // "400": #6E6B67
-  // );
-  
-  // $theme-colors: map-merge($theme-colors, $my-primary);
-@import "../node_modules/bootstrap/scss/bootstrap";
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "/node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+// colors
+$primary-colors: (
+  "primary-100": #fffdf5,
+  "primary-200": #fffbe5,
+  "primary-300": #e8e3da,
+  "primary-400": #6e6b67
+);
+
+$secondary-colors: (
+  "secondary-100": #E0EFDE,
+  "secondary-200": #569573,
+  "secondary-300": #406C55
+);
+
+$gray-colors: (
+  "gray-white": #FFFFFF,
+  "gray-100": #F8F9FA,
+  "gray-200": #DEE2E6,
+  "gray-300": #ADB5BD,
+  "gray-400": #6C757D,
+  "gray-500": #343A40
+);
+
+$special-colors: (
+  "info": #4A72FF,
+  "success": #2CC585,
+  "warning": #FFB054,
+  "Danger": #D65F5F
+);
+
+// Merge the separate maps into $theme-colors
+$theme-colors: map-merge($theme-colors, $primary-colors);
+$theme-colors: map-merge($theme-colors, $secondary-colors);
+$theme-colors: map-merge($theme-colors, $gray-colors);
+$theme-colors: map-merge($theme-colors, $special-colors);
+
+// spacers
+$spacers: (
+  0: 0,
+  1: $spacer * .5,   //8px
+  2: $spacer * .75,  //12px
+  3: $spacer,        //16px
+  4: $spacer * 1.25, //20px
+  5: $spacer * 1.5,  //24px
+  6: $spacer * 2.25, //
+  7: $spacer * 2.5,
+  8: $spacer * 3,
+  9: $spacer * 3.75,
+  10: $spacer * 5
+);
+
+// 5. Include remainder of required parts
+@import "/node_modules/bootstrap/scss/maps";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "/node_modules/bootstrap/scss/utilities";
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/type";
+@import "/node_modules/bootstrap/scss/images";
+@import "/node_modules/bootstrap/scss/containers";
+@import "/node_modules/bootstrap/scss/grid";
+@import "/node_modules/bootstrap/scss/tables";
+@import "/node_modules/bootstrap/scss/forms";
+@import "/node_modules/bootstrap/scss/buttons";
+@import "/node_modules/bootstrap/scss/transitions";
+@import "/node_modules/bootstrap/scss/dropdown";
+@import "/node_modules/bootstrap/scss/button-group";
+@import "/node_modules/bootstrap/scss/nav";
+@import "/node_modules/bootstrap/scss/navbar";
+@import "/node_modules/bootstrap/scss/card";
+@import "/node_modules/bootstrap/scss/accordion";
+@import "/node_modules/bootstrap/scss/breadcrumb";
+@import "/node_modules/bootstrap/scss/pagination";
+@import "/node_modules/bootstrap/scss/badge";
+@import "/node_modules/bootstrap/scss/alert";
+@import "/node_modules/bootstrap/scss/progress";
+@import "/node_modules/bootstrap/scss/list-group";
+@import "/node_modules/bootstrap/scss/close";
+@import "/node_modules/bootstrap/scss/toasts";
+@import "/node_modules/bootstrap/scss/modal";
+@import "/node_modules/bootstrap/scss/tooltip";
+@import "/node_modules/bootstrap/scss/popover";
+@import "/node_modules/bootstrap/scss/carousel";
+@import "/node_modules/bootstrap/scss/spinners";
+@import "/node_modules/bootstrap/scss/offcanvas";
+@import "/node_modules/bootstrap/scss/placeholders";
+@import "/node_modules/bootstrap/scss/helpers";
+
+// font size reponsive
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+$enable-rfs: false;
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "/node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
