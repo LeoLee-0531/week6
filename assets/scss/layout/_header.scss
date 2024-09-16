@@ -1,7 +1,22 @@
-.container {
+.header .container {
   height: 60px;
+
+  @include media-breakpoint-up(lg) {
+    height: 124px;
+  }
+}
+
+.logo {
+  @include media-breakpoint-up(xl) {
+    width: 96px;
+    height: 28px;
+  }
 }
 
 .navbar-toggler-icon {
   width: 24px;
+}
+
+.search {
+  height: 48px;
 }
