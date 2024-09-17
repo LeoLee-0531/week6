@@ -7,16 +7,23 @@
   @include media-breakpoint-up(sm) {
     background-image: url("/assets/images/banner.png");
   }
+  height: calc(100vh - 60px);
 
-  .container {
-    height: calc(100vh - 60px);
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 204px);
+  }
+}
 
-    @include media-breakpoint-up(lg) {
-      height: calc(100vh - 124px);
-    }
+.btn .text {
+  letter-spacing: 1.6px;
+}
+
+.topics {
+  .img {
+    border-radius: 20px 0;
   }
 
-  .btn .text {
+  .text {
     letter-spacing: 1.6px;
   }
 }

@@ -13,24 +13,249 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="banner">
-      <div
-        class="container d-flex flex-column justify-content-end justify-content-lg-center align-items-center align-items-lg-start py-8"
-      >
-        <h2 class="fs-6 text-white fw-bold mb-1">獻給新世代的生活風格誌</h2>
-        <h1 class="text-white fw-bold mb-4">一起探索生活的無限可能</h1>
-        <button
-          type="button"
-          class="btn btn-secondary-200 text-white d-flex align-items-center"
-        >
-          <p class="text me-2 mb-0 fw-bold">馬上訂閱</p>
-          <span class="material-symbols-outlined">east</span>
-        </button>
-      </div>
+    <div class="horizon container">
+      <hr class="m-0" />
     </div>
 
+    <div
+      class="banner container-lg container-fluid px-lg-9 py-8 my-lg-10 d-flex flex-column justify-content-end justify-content-lg-center align-items-center align-items-lg-start"
+    >
+      <h2 class="fs-6 text-white fw-bold mb-1">獻給新世代的生活風格誌</h2>
+      <h1 class="text-white fw-bold mb-4">一起探索生活的無限可能</h1>
+      <button
+        type="button"
+        class="btn btn-secondary-200 text-white d-flex align-items-center"
+      >
+        <p class="text me-2 fw-bold">馬上訂閱</p>
+        <span class="material-symbols-outlined">east</span>
+      </button>
+    </div>
+
+    <section class="topics container py-8 py-lg-10">
+      <h2 class="mb-5 fw-bold">熱門主題</h2>
+      <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 gy-1 gy-md-5">
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="../assets/images/theme-1.png"
+            />
+            <img
+              class="img w-100"
+              src="../assets/images/theme-1-sm.png"
+              alt=""
+            />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            城市漫遊者
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-2.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-2-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            美學建築誌
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-3.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-3-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            秘境尋蹤人
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-4.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-4-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            慢活生活行
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-5.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-5-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            品味設計家
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-6.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-6-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            工藝匠心賞
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-7.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-7-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            時尚先鋒派
+          </p>
+        </div>
+        <div class="col position-relative">
+          <picture>
+            <source
+              media="(min-width: 992px)"
+              srcset="/assets/images/theme-8.png"
+            />
+            <img class="img w-100" src="/assets/images/theme-8-sm.png" alt="" />
+          </picture>
+          <p class="text text-white fw-bold position-absolute top-50 start-50">
+            美食探險記
+          </p>
+        </div>
+      </div>
+
+      <!-- <ul
+        class="list-group row col-sm-12 col-md-6 px-0 d-flex flex-column flex-md-row flex-wrap g-1 align-items-center"
+      >
+        <li class="list-group-item border-0 px-0">
+          <a href="#" class="position-relative"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-1-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              城市漫遊者
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-2-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              美學建築誌
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-3-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              秘境尋蹤人
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-4-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              慢活生活行
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-5-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              品味設計家
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-6-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              工藝匠心賞
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-7-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              時尚先鋒派
+            </p>
+          </a>
+        </li>
+        <li class="list-group-item border-0 px-0">
+          <a href="#"
+            ><img
+              class="img w-100"
+              src="/assets/images/theme-8-sm.png"
+              alt=""
+            />
+            <p
+              class="text text-white fw-bold position-absolute top-50 start-50"
+            >
+              美食探險記
+            </p>
+          </a>
+        </li>
+      </ul> -->
+    </section>
+
     <%- include('./layout/footer'); -%>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
