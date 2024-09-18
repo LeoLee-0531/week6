@@ -1,3 +1,16 @@
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
+// swiper
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 48,
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev"
+  },
+  pagination: {
+    el: ".swiper-pagination-custom",
+    type: "fraction"
+  }
+});
