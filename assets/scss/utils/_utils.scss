@@ -5,3 +5,14 @@
 .letter-normal {
   letter-spacing: normal;
 }
+
+.hover {
+  @include hover;
+}
+
+.btn {
+  background-color: #569573;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}

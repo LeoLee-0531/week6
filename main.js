@@ -12,5 +12,12 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination-custom",
     type: "fraction"
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
   }
 });
