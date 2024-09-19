@@ -50,7 +50,20 @@
   }
 }
 
-.swiper-prev, .swiper-next {
+.swiper-prev,
+.swiper-next {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.plans {
+  overflow: hidden;
+
+  .img {
+    transform: translate(30%, 10%);
+
+    @include media-breakpoint-up(lg) {
+     transform: translate(0, 11%); 
+    }
+  }
 }

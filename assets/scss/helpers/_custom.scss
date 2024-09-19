@@ -12,7 +12,7 @@
 $primary-colors: (
   "primary-100": #fffdf5,
   "primary-200": #fffbe5,
-  "primary-300": #e8e3da,
+  "primary-300": #E8E3DA,
   "primary-400": #6e6b67
 );
 
@@ -70,9 +70,12 @@ $position-values: (
 
 // buttons
 $btn-border-radius: 100px;
+$btn-border-radius-sm: 100px;
+$btn-border-radius-lg: 100px;
 $btn-padding-x: 24px;
 $btn-padding-y: 12px;
-$btn-link-hover-color: map-get($secondary-colors, "secondary-200");
+$btn-padding-x-lg: 24px;
+$btn-padding-y-lg: 16px;
 
 // others
 $paragraph-margin-bottom: 0;
@@ -128,8 +131,6 @@ $utilities: map-merge(
     ),
   )
 );
-
-// _button.scss
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "/node_modules/bootstrap/scss/utilities/api";

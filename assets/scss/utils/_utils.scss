@@ -1,4 +1,4 @@
-.position-absolute {
+.transform-50-50 {
   transform: translate(-50%, -50%);
 }
 
@@ -11,8 +11,15 @@
 }
 
 .btn {
-  background-color: #569573;
-  color: #FFFFFF;
+  background-color: map-get($secondary-colors, "secondary-200");
+  color: map-get($map: $gray-colors, $key: gray-white);
   display: flex;
   align-items: center;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: map-get($secondary-colors, "secondary-200");
+    color: map-get($map: $gray-colors, $key: gray-white);      
+    transform: scale(0.9);
+  }
 }

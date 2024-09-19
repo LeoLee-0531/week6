@@ -30,8 +30,12 @@
       >
         <h2 class="fs-6 text-white fw-bold mb-1">獻給新世代的生活風格誌</h2>
         <h1 class="text-white fw-bold mb-4">一起探索生活的無限可能</h1>
-        <button type="button" class="btn">
+        <button type="button" class="btn d-lg-none">
           <p class="text me-2 fw-bold">馬上訂閱</p>
+          <span class="material-symbols-outlined">east</span>
+        </button>
+        <button type="button" class="btn btn-lg d-none d-lg-flex">
+          <p class="me-2 fw-bold">馬上訂閱</p>
           <span class="material-symbols-outlined">east</span>
         </button>
       </section>
@@ -53,7 +57,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               城市漫遊者
             </p>
@@ -71,7 +75,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               美學建築誌
             </p>
@@ -89,7 +93,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               秘境尋蹤人
             </p>
@@ -107,7 +111,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               慢活生活行
             </p>
@@ -125,7 +129,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               品味設計家
             </p>
@@ -143,7 +147,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               工藝匠心賞
             </p>
@@ -161,7 +165,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               時尚先鋒派
             </p>
@@ -179,7 +183,7 @@
               />
             </picture>
             <p
-              class="text text-white fw-bold position-absolute top-50 start-50"
+              class="text text-white fw-bold position-absolute transform-50-50 top-50 start-50"
             >
               美食探險記
             </p>
@@ -317,10 +321,11 @@
 
       <!-- plans -->
       <section
-        class="plans bg-primary-200 py-8 py-lg-10"
+        class="plans bg-primary-200"
       >
-        <div class="container d-flex flex-column align-items-center">
-          <p class="text-secondary-200 mb-2 fw-bold">\ 母親節強檔活動 /</p>
+        <div class="container position-relative py-8 py-lg-10 d-flex flex-column align-items-center">
+          <p class="d-lg-none text-secondary-200 mb-2 fw-bold">\ 母親節強檔活動 /</p>
+          <p class="d-none d-lg-block fs-4 text-primary-400 mb-2 fw-bold">\ 母親節強檔活動 /</p>
           <h2 class="fw-bold mb-5">家庭訂閱方案限時 7 折</h2>
           <ul>
             <li class="d-flex align-items-center mb-3 text-gray-400 fw-bold">
@@ -348,11 +353,21 @@
               <p>為每個成員量身打造專屬行程</p>
             </li>
           </ul>
-          <button type="button" class="btn">
+          <button type="button" class="btn d-lg-none">
             <p class="text fw-bold mx-auto">我想了解</p>
           </button>
+          <button type="button" class="btn btn-lg d-none d-lg-block">
+            <p class="text fw-bold mx-auto">我想了解</p>
+          </button>
+          <picture>
+            <source media="(min-width: 992px)" srcset="/assets/images/bg-2.png">
+            <img class="img position-absolute bottom-0 end-0" src="/assets/images/bg-2-sm.png" alt="">
+          </picture>
+          <img class="img d-none d-lg-block position-absolute bottom-0 start-0" src="/assets/images/bg-1.png" alt="">
         </div>
       </section>
+
+      
     </main>
 
     <%- include('./layout/footer'); -%>
