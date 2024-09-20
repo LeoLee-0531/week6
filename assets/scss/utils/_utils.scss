@@ -6,8 +6,28 @@
   letter-spacing: normal;
 }
 
-.hover {
-  @include hover;
+.myhover {
+  transition: 0.2s;
+}
+
+.myhover:hover {
+  transform: scale(0.9);
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  transform: scale(0.9);
+}
+
+.test {
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
 }
 
 .btn {
